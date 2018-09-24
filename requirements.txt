@@ -4,3 +4,4 @@ seaborn
 pandas
 scipy
 statsmodels
+sklearn
