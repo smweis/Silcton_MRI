@@ -1,0 +1,64 @@
+Variable Name	Variable	Measurement Unit	Allowed values	Description
+Participant ID	ID	Numeric	[1001-1092]	ID number assigned to participants chronologically
+Batch #	Batch	Numeric	[1-4]	"Data were collected in batches of ~20 subjects, after which data were analyzed."
+Participant age	age	Years	[18-99]	Participant age in years
+Participant education	education	Years	[12-20]	Participant education in years completed (12 = finished high school)
+English as a first language	english_first_lang	Binary	Y/N	Was English the participant's first language?
+Handedness	right_handed	Binary	Y/N	Yes means participant self-reported being right handed
+Gender	gender	Binary	M/F	Participant's self-reported gender
+Race	race	String		Participant's self-reported race
+Wide-ranging achievement test IV (reading)	wrat	Numeric	[0-55]	Score (out of 55) on a test of verbal ability
+Mental rotation test	mrt	Numeric	[-40-40]	"Score on the mental rotation test (with wrong responses counting as -2, correct responses counting as +2)"
+Santa Barbara Sense of Direction	sbsod	Numeric	[1-7]	"A self-report measure of navigation ability, averaged and reversed so higher scores = better navigators"
+Spatial anxiety questionnaire	saq	Numeric	[1-7]	A self-report measure of navigation anxiety. Higher scores = MORE anxiety.
+Average between-route pointing on Virtual Silcton	pointBetween	Degrees	[0-180]	Average pointing error on virtual Silcton for between-route trials
+Average within-route pointing on Virtual Silcton	pointWithin	Degrees	[0-180]	Average pointing error on virtual Silcton for within-route trials
+"Average pointing on Virtual Silcton, all trials"	pointTotal	Degrees	[0-180]	Average pointing error on virtual Silcton for all trials
+Pointing group membership 	int1non2imp3	R^2	[1-3]	"Group membership based on virtual Silcton within- and between-route pointing (using cutoffs from Weisberg & Newcombe, 2016)"
+Bidimensional regression R^2 on model building for Virtual Silcton	Model_Building_Total	R^2	[0-1]	Configuration accuracy for the overall model building task on Virtual Silcton
+"Bidimensional regression R^2 on model building for Virtual Silcton, just Batty Route"	Model_Building_Within_Batty	R^2	[0-1]	Configuration accuracy for just the first main route buildings Virtual Silcton
+"Bidimensional regression R^2 on model building for Virtual Silcton, Just Golledge route"	Model_Building_Within_Golledge	R^2	[0-1]	Configuration accuracy for just the second main route buildings Virtual Silcton
+"Bidimensional regression R^2 on model building for Virtual Silcton, averaged within-route"	Model_Building_Within_Average	Numeric	[0-1]	Configuration accuracy for both main routes measured separately but averaged together on Virtual Silcton
+Lax scoring on the building naming task for Virtual Silcton 	buildingNamingLax	Numeric	[0-8]	Total number of correctly named building images for Virtual Silcton
+"Left hippocampus, Freesurfer, subfields"	lhc_from_freesurfer_subfields	mm^3	[0-2000000]	"Left hippocampal volume from freesurfer. Calculated by adding all ""subfields"" from recon-all -hippo-subfields"
+"Right hippocampus, Freesurfer, subfields"	rhc_from_freesurfer_subfields	mm^3	[0-2000000]	"Right hippocampal volume from freesurfer. Calculated by adding all ""subfields"" from recon-all -hippo-subfields"
+"Left caudate, Freesurfer"	lcaud	mm^3	[0-2000000]	Left caudate volume from freesurfer.
+"Left hippocampus, Freesurfer"	lhc	mm^3	[0-2000000]	Left hippocampal volume from freesurfer (automatic parcellation)
+"Right caudate, Freesurfer"	rcaud	mm^3	[0-2000000]	Right caudate volume from freesurfer
+"Right hippomcapus, Freesurfer"	rhc	mm^3	[0-2000000]	Right hippocampal volume from freesurfer (automatic parcellation)
+"Total hippocampus, Freesurfer"	totalHippo	mm^3	[0-2000000]	Total hippocampal volume from freesurfer (adding rhc + lhc)
+"Brain volume, Freesurfer"	brainVol	mm^3	[0-2000000]	Total brain volume from freesurfer
+"Cortical volume, Freesurfer"	cortexVol	mm^3	[0-2000000]	Cortical volume from freesurfer
+"Left amygdala, Freesurfer"	lamyg	mm^3	[0-2000000]	Left amygdala volume from freesurfer
+"Right amygdala, Freesurfer"	ramyg	mm^3	[0-2000000]	Right amygdala volume from freesurfer
+"Cerebrospinal fluid, Freesurfer"	csf	mm^3	[0-2000000]	CSF volume from freesurfer
+Slice of the hippocampus separating posterior/anterior right hippocampus	FirstSliceWithoutUncus_Right_53	Numeric	[80-150]	First slice of the right hippocampus (moving from anterior to posterior) that does not include the uncus. 
+"Posterior right hippocampus, Freesurfer"	rhc_bodytail	mm^3	[0-2000000]	"Posterior right hippocampal volume from freesurfer, with hand segmentation (everything posterior to last slice of uncus)"
+"Anterior right hippocampus, Freesurfer"	rhc_head	mm^3	[0-2000000]	Anterior right hippocampal volume from freesurfer (rhc minus rhc_bodytail)
+Slice of the hippocampus separating posterior/anterior left hippocampus	FirstSliceWithoutUncus_Left_53	Numeric	[80-150]	First slice of the left hippocampus (moving from anterior to posterior) that does not include the uncus. 
+"Posterior left hippocampus, Freesurfer"	lhc_bodytail	mm^3	[0-2000000]	"Posterior left hippocampal volume from freesurfer, with hand segmentation (everything posterior to last slice of uncus)"
+"Anterior left hippomcapus, Freesurfer"	lhc_head	mm^3	[0-2000000]	Anterior left hippocampal volume from freesurfer (rhc minus rhc_bodytail)
+Date of segmentation by SMW	SW_Date_Segmented	Date		Date segmentation was performed
+"Anterior right hippocampus, ASHS"	ashs_ant_rhc	mm^3	[0-2000000]	Anterior right hippocampal volume from ASHS
+"Right Brodmann's Area 35, ASHS"	ashs_rbr35	mm^3	[0-2000000]	Right Brodmann's Area 35 volume from ASHS
+"Right Brodmann's Area 36, ASHS"	ashs_rbr36	mm^3	[0-2000000]	Right Brodmann's Area 36 volume from ASHS
+"Right collateral sulcus, ASHS"	ashs_rColSul	mm^3	[0-2000000]	Right collateral sulcus volume from ASHS
+"Right entorhinal cortex, ASHS"	ashs_rerc	mm^3	[0-2000000]	Right entorhinal cortex volume from ASHS
+"Right parahippocampal cortex, meninges, ASHS"	ashs_rmeningesphc	mm^3	[0-2000000]	"Right parahippocampal cortex, meninges volume from ASHS"
+"Right miscellaneous, ASHS"	ashs_rmisc	mm^3	[0-2000000]	Right miscellaneous volume from ASHS
+"Right occipitotemporal sulcus, ASHS"	ashs_rotsul	mm^3	[0-2000000]	Right occipitotemporal sulcus volume from ASHS
+"Right parahippocampal cortex, ASHS"	ashs_rphc	mm^3	[0-2000000]	Right parahippocampal cortex volume from ASHS
+"Posterior right hippocampus, ASHS"	ashs_post_rhc	mm^3	[0-2000000]	Posterior right hippocampal volume from ASHS
+"Anterior left hippocampus, ASHS"	ashs_ant_lhc	mm^3	[0-2000000]	Anterior left hippocampal volume from ASHS
+"Left Brodmann's Area 35, ASHS"	ashs_lbr35	mm^3	[0-2000000]	Left Brodmann's Area 35 volume from ASHS
+"Left Brodmann's Area 36, ASHS"	ashs_lbr36	mm^3	[0-2000000]	Left Brodmann's Area 36 volume from ASHS
+"Left collateral sulcus, ASHS"	ashs_lColSul	mm^3	[0-2000000]	Left collateral sulcus volume from ASHS
+"Left entorhinal cortex, ASHS"	ashs_lerc	mm^3	[0-2000000]	Left entorhinal cortex volume from ASHS
+"Left parahippocampal cortex, meninges, ASHS"	ashs_lmeningesphc	mm^3	[0-2000000]	"Left parahippocampal cortex, meninges volume from ASHS"
+"Left miscellaneous, ASHS"	ashs_lmisc	mm^3	[0-2000000]	Left miscellaneous volume from ASHS
+"Left occipitotemporal sulcus, ASHS"	ashs_lotsul	mm^3	[0-2000000]	Left occipitotemporal sulcus volume from ASHS
+"Left parahippocampal cortex, ASHS"	ashs_lphc	mm^3	[0-2000000]	Left parahippocampal cortex volume from ASHS
+"Posterior left hippocampus, ASHS"	ashs_post_lhc	mm^3	[0-2000000]	Posterior left hippocampal volume from ASHS
+"Right hippocampus, ASHS"	ashs_rtotalhipp	mm^3	[0-2000000]	Total right hippocampal volume from ASHS
+"Left hippomcapus, ASHS"	ashs_ltotalhipp	mm^3	[0-2000000]	Total left hippocampal volume from ASHS
+"Total hippocampus, ASHS"	ashs_total_hipp	mm^3	[0-2000000]	Total hippocampal volume from ASHS
